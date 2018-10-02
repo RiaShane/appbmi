@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.app.bmi"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>App BMI</name>
+
+  <description>
+      App per il calcolo del BMI dati il peso in Kg,
+	  l'altezza in Metri, il sesso.
+  </description>
+
+  <author email="leano.shane@canossamilano.org">
+      Ria Shane Leano
+  </author>
+  
+	<platform name="android" />
+	
+	<icon src="icona.jpg" platform="android" qualifier="ldpi" />
+	<icon src="icona.jpg" platform="android" qualifier="mdpi" />
+	<icon src="icona.jpg" platform="android" qualifier="hdpi" />
+
+	<access origin="*" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+		<!-- abilita links eseterni -->
+	<allow-navigation href="*://*getskeleton.com/*" />
+	
+</widget>

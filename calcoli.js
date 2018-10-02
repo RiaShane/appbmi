@@ -25,3 +25,4 @@ if(sesso="m"){
 function cancella(){
 	document.getElementById('calcola').innerHTML=" ";
 }
+/*helloooo*/

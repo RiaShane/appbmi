@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang=it>
+<head>
+    <title>BMI</title>
+<link rel=stylesheet href=http://getskeleton.com/dist/css/skeleton.css>
+<script src=calcoli.js> </script>
+	<body style="background-color:lightcyan">
+			<meta charset=utf-8>
+</head>
+<body>
+<div class=container>
+    <div class=row>
+<div class="twelve columns">
+<h1><font face=”Verdana”><b>Calcola il tuo BMI</b></h1></font>
+<p>Inserisci il tuo peso in <b>kg</b> e la tua altezza in <b>metri</b> (usa la virgola per i decimali)</p>
+<form name=BMI>
+<label for="peso">Peso in kg</label>
+      <input class="u-full-width" placeholder="Peso in kg" name=peso id=peso type=number required min=20.00 step=0.1>
+<label for="altezza">Altezza in metri</label>
+      <input class="u-full-width" placeholder="Altezza in metri" name=altezza id=altezza type=number required min=1.00 step=0.01 max=2.4>
+<label for="sesso">Sesso</label>
+ <input type="radio" name=sesso value=f>Femmina
+ <input type="radio" name=sesso value=m>Maschio
+<br>
+<input type=button onclick=calcolo() class="button-primary u-full-width" value=calcola> 
+<input type=reset onclick=cancella() class=u-full-width value=Annulla>
+<p id=calcola></p>
+<p id=spiegazione></p>
+</form>
+
+
+    </div>
+</div>
+    </div>
+</body>
+</html>
+
+
+
+
